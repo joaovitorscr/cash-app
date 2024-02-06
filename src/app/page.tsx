@@ -1,7 +1,9 @@
+import { AccountSummary } from '@/components/home/account-summary'
+
 export default function Home() {
   return (
-    <main>
-      <h2>Init</h2>
+    <main className="container mx-auto my-20">
+      <AccountSummary />
     </main>
   )
 }
