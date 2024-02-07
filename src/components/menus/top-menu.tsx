@@ -1,7 +1,9 @@
 'use client'
 
-import { MenuIcon, BellIcon } from 'lucide-react'
+import { numberToDolar } from '@/lib/utils'
+import { BellIcon } from 'lucide-react'
 import { useState } from 'react'
+import { SideMenu } from './side-menu'
 
 export function TopMenu() {
   const [hasPassed, setHasPassed] = useState<boolean>(false)
@@ -20,13 +22,17 @@ export function TopMenu() {
 
   return (
     <header
-      className={`fixed top-0 w-full px-2 py-4 ${hasPassed && 'border-b backdrop-blur-md'}`}
+      className={`fixed top-0 w-full px-2 py-4 ${hasPassed && 'border-b backdrop-blur-sm'}`}
     >
       <div className="container mx-auto flex justify-between">
         <button>
-          <MenuIcon className="stroke-blue-600" />
+          <SideMenu />
         </button>
-        {hasPassed && <p className="font-medium">$0.00</p>}
+        {hasPassed && (
+          <p className="font-medium">
+            {numberToDolar(Math.floor(Math.random() * 100))}
+          </p>
+        )}
         <button>
           <BellIcon className="stroke-blue-600" />
         </button>
