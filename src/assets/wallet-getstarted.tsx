@@ -6,7 +6,6 @@ export function WalletImage(props: LucideProps) {
       width="800px"
       height="800px"
       viewBox="0 0 1024 1024"
-      className="icon"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

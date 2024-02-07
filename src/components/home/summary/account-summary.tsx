@@ -1,7 +1,7 @@
 import { HandshakeIcon, ReceiptTextIcon, Wallet } from 'lucide-react'
 import { SummaryButton } from './summary-button'
 
-export function AccountSummary() {
+export function AccountSummarySection() {
   return (
     <div>
       <div className="flex items-center justify-center gap-6">
