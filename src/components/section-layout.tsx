@@ -1,8 +1,12 @@
+import Link from 'next/link'
 import { ReactNode } from 'react'
 
 interface SectionLayoutProps {
-  title: string
-  rightButton?: string
+  title?: string
+  rightButton?: {
+    title: string
+    to: string
+  }
   children: ReactNode
 }
 
@@ -15,9 +19,14 @@ export function SectionLayout({
     <section className="container mx-auto my-4">
       <div className="flex justify-between">
         <h2 className="font-semibold">{title}</h2>
-        <button className="text-sm text-blue-600 hover:underline">
-          {rightButton}
-        </button>
+        {rightButton && (
+          <Link
+            href={rightButton.to}
+            className="text-sm text-blue-600 hover:underline"
+          >
+            {rightButton.title}
+          </Link>
+        )}
       </div>
       <div className="mt-2 rounded-lg border p-2">{children}</div>
     </section>

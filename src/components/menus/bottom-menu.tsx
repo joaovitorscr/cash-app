@@ -9,19 +9,20 @@ import {
 
 export function BottomMenu() {
   return (
-    <footer className="fixed bottom-0 w-full border-t bg-white py-4">
+    <div className="fixed bottom-0 w-full border-t bg-white py-4">
       <div className="container mx-auto">
         <nav className="flex items-center justify-center gap-2">
-          <MenuItem title="Home" icon={<HomeIcon />} />
-          <MenuItem title="Card" icon={<CreditCardIcon />} />
+          <MenuItem to="/" title="Home" icon={<HomeIcon />} />
+          <MenuItem to="/" title="Card" icon={<CreditCardIcon />} />
           <MenuItem
+            to="/"
             title="Pay"
             icon={<ArrowUpDownIcon className="rotate-45" />}
           />
-          <MenuItem title="Invite" icon={<HandHeartIcon />} />
-          <MenuItem title="Explore" icon={<GlobeIcon />} />
+          <MenuItem to="/" title="Invite" icon={<HandHeartIcon />} />
+          <MenuItem to="/" title="Explore" icon={<GlobeIcon />} />
         </nav>
       </div>
-    </footer>
+    </div>
   )
 }
