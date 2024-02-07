@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-// import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 interface MenuItemProps {
   title: string
@@ -10,11 +10,11 @@ interface MenuItemProps {
 }
 
 export function MenuItem({ title, icon, to }: MenuItemProps) {
-  // const pathname = usePathname()
+  const pathname = usePathname()
   return (
     <Link
       href={to}
-      className={`flex w-screen flex-col items-center ${title === 'Home' ? 'text-blue-800' : ''}`}
+      className={`flex w-screen flex-col items-center ${pathname === to ? 'text-blue-800' : ''}`}
     >
       {icon}
       <span className="text-xs font-medium">{title}</span>

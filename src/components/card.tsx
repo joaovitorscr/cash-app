@@ -1,4 +1,4 @@
-import { numberToDolar } from '@/utils/misc'
+import { numberToDolar } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
 import { ShoppingBag } from '@/assets/shopping-bag-transactions'
 

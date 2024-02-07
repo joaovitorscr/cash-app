@@ -13,7 +13,7 @@ export function BottomMenu() {
       <div className="container mx-auto">
         <nav className="flex items-center justify-center gap-2">
           <MenuItem to="/" title="Home" icon={<HomeIcon />} />
-          <MenuItem to="/" title="Card" icon={<CreditCardIcon />} />
+          <MenuItem to="/card" title="Card" icon={<CreditCardIcon />} />
           <MenuItem
             to="/"
             title="Pay"
