@@ -19,7 +19,7 @@ export function TopMenu() {
   }
 
   return (
-    <header className="container fixed top-0 mx-auto my-4 flex justify-between px-2">
+    <header className="container fixed top-0 mx-auto flex translate-y-2 justify-between px-2">
       <button>
         <MenuIcon className="stroke-blue-600" />
       </button>
