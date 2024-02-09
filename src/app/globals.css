@@ -7,3 +7,9 @@
     @apply p-0 m-0 box-border
   }
 }
+
+@layer components {
+  .focus-ring {
+    @apply outline-none focus-visible:rounded-md focus-visible:ring-2 focus-visible:ring-blue-200
+  }
+}

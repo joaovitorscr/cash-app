@@ -11,12 +11,12 @@ import { Button } from '../button'
 export function SideMenu() {
   return (
     <Dialog.Root>
-      <Dialog.Trigger>
+      <Dialog.Trigger className="focus-ring">
         <MenuIcon className="stroke-blue-600" />
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed left-0 top-0 z-10 h-screen w-full bg-black/85 after:transition after:ease-in-out">
-          <Dialog.Content className="fixed left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 after:transition after:ease-in-out">
+        <Dialog.Overlay className="fixed left-0 top-0 z-10 h-screen w-full bg-black/85 data-[state=open]:animate-overlayShow">
+          <Dialog.Content className="fixed left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 data-[state=open]:animate-contentShow">
             <div className="flex flex-col items-center">
               <Button
                 className="flex w-full items-center justify-center"

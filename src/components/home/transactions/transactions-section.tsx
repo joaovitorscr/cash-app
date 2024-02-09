@@ -10,16 +10,13 @@ export function TransactionsSection() {
     >
       <div className="my-4 space-y-4">
         {data.map((item) => (
-          <>
-            <div key={item.id}>
-              <Card
-                title={item.title}
-                description={item.description}
-                price={item.price}
-              />
-            </div>
-            <div className="h-px w-full bg-zinc-200 last:h-0" />
-          </>
+          <Card
+            key={item.id}
+            title={item.title}
+            description={item.description}
+            price={item.price}
+            bottomSeparator
+          />
         ))}
       </div>
     </SectionLayout>

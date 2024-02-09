@@ -17,10 +17,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="">
-      <TopMenu />
-      <body className={`${inter.className} antialiased`}>{children}</body>
-      <BottomMenu />
+    <html lang="en">
+      <body className={`${inter.className} antialiased`}>
+        <TopMenu />
+        {children}
+        <BottomMenu />
+      </body>
     </html>
   )
 }

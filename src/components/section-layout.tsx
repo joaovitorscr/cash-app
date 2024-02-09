@@ -22,7 +22,7 @@ export function SectionLayout({
         {rightButton && (
           <Link
             href={rightButton.to}
-            className="text-sm text-blue-600 hover:underline"
+            className="focus-ring text-sm text-blue-600 hover:underline"
           >
             {rightButton.title}
           </Link>

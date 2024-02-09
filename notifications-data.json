@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "💳 Payment Reminder",
+    "description": "Don't forget to pay your credit card bill due on Feb 20, 2024.",
+    "date": "Feb 10, 2024"
+  },
+  {
+    "id": 2,
+    "title": "🔒 Security Alert",
+    "description": "We detected a suspicious login attempt on your account. Please review your recent transactions.",
+    "date": "Feb 12, 2024"
+  },
+  {
+    "id": 3,
+    "title": "💰 Account Balance Update",
+    "description": "Your account balance has been updated. Check your latest transactions for details.",
+    "date": "Feb 14, 2024"
+  },
+  {
+    "id": 4,
+    "title": "✅ Transaction Confirmation",
+    "description": "Your recent transfer of $500 to John Doe was successful.",
+    "date": "Feb 15, 2024"
+  },
+  {
+    "id": 5,
+    "title": "ℹ️ Important Announcement",
+    "description": "We've updated our terms and conditions. Please review them in the app settings.",
+    "date": "Feb 16, 2024"
+  },
+  {
+    "id": 6,
+    "title": "📄 Credit Card Statement Available",
+    "description": "Your monthly credit card statement for January 2024 is now available for viewing.",
+    "date": "Feb 18, 2024"
+  },
+  {
+    "id": 7,
+    "title": "💰 Loan Payment Reminder",
+    "description": "Your loan installment for this month is due on Feb 25, 2024. Ensure sufficient funds are available.",
+    "date": "Feb 20, 2024"
+  },
+  {
+    "id": 8,
+    "title": "🔐 Account Security Update",
+    "description": "We've enhanced our security measures. Please update your password for better protection.",
+    "date": "Feb 21, 2024"
+  },
+  {
+    "id": 9,
+    "title": "🛠️ Scheduled Maintenance",
+    "description": "Our banking system will undergo scheduled maintenance on Feb 22, 2024, from 10:00 PM to 2:00 AM (UTC).",
+    "date": "Feb 22, 2024"
+  },
+  {
+    "id": 10,
+    "title": "🚀 New Feature Announcement",
+    "description": "Introducing Quick Transfer! Send money to your contacts instantly with our latest feature.",
+    "date": "Feb 23, 2024"
+  }
+]
