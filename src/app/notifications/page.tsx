@@ -1,6 +1,6 @@
 import { NotificationCard } from '@/components/notifications/notification-card'
 import { CornerUpLeft } from 'lucide-react'
-import notificationsData from '../../../notifications-data.json'
+import data from '../../../data.json'
 import Link from 'next/link'
 
 export interface Notification {
@@ -11,6 +11,8 @@ export interface Notification {
 }
 
 export default function Notifications() {
+  const notifications = data.notifications
+
   return (
     <main className="container mx-auto my-20 px-2">
       <div className="mx-auto flex items-center justify-between">
@@ -22,7 +24,7 @@ export default function Notifications() {
       <div className="mt-10">
         <h3 className="text-lg font-medium">Previously</h3>
         <div className="mt-4 space-y-3">
-          {notificationsData.map((notification: Notification) => (
+          {notifications.map((notification: Notification) => (
             <NotificationCard
               id={notification.id}
               key={notification.id}

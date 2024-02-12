@@ -15,7 +15,7 @@ export function BottomMenu() {
           <MenuItem to="/" title="Home" icon={<HomeIcon />} />
           <MenuItem to="/card" title="Card" icon={<CreditCardIcon />} />
           <MenuItem
-            to="/"
+            to="/payment"
             title="Pay"
             icon={<ArrowUpDownIcon className="rotate-45" />}
           />

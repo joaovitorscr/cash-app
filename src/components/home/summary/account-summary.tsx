@@ -18,14 +18,17 @@ export function AccountSummarySection() {
       </div>
       <nav className="my-4 flex items-center justify-center gap-2">
         <SummaryButton
+          to="/"
           icon={<Wallet className="h-4 w-4" />}
           title="Add money"
         />
         <SummaryButton
+          to="/"
           icon={<ReceiptTextIcon className="h-4 w-4" />}
           title="Details"
         />
         <SummaryButton
+          to="/payment"
           icon={<HandshakeIcon className="h-4 w-4" />}
           title="Make a payment"
         />

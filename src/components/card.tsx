@@ -1,6 +1,7 @@
 import { numberToDollar } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
 import { ShoppingBag } from '@/assets/shopping-bag-transactions'
+import { Separator } from './separator'
 
 interface CardProps {
   icon?: JSX.Element
@@ -31,7 +32,7 @@ export function Card({
           <ArrowRight className="text-blue-600  outline-none group-hover:text-blue-800" />
         )}
       </button>
-      {bottomSeparator && <div className="h-px w-full bg-zinc-200 last:h-0" />}
+      {bottomSeparator && <Separator className="last:h-0" />}
     </>
   )
 }
