@@ -14,7 +14,7 @@ export function MenuItem({ title, icon, to }: MenuItemProps) {
   return (
     <Link
       href={to}
-      className={`focus-ring flex w-screen flex-col items-center ${pathname === to ? 'text-blue-800' : ''}`}
+      className={`focus-ring flex w-screen flex-col items-center ${pathname === to && 'text-blue-800'}`}
     >
       {icon}
       <span className="text-xs font-medium">{title}</span>
