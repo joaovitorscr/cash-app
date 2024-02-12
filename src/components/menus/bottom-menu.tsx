@@ -20,7 +20,7 @@ export function BottomMenu() {
             icon={<ArrowUpDownIcon className="rotate-45" />}
           />
           <MenuItem to="/referral" title="Invite" icon={<HandHeartIcon />} />
-          <MenuItem to="/" title="Explore" icon={<GlobeIcon />} />
+          <MenuItem to="/explore" title="Explore" icon={<GlobeIcon />} />
         </nav>
       </div>
     </div>

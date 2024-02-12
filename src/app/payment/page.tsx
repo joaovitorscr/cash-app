@@ -8,7 +8,7 @@ export default function Pay() {
   const contacts = data.contacts
   return (
     <main className="container mx-auto my-20 space-y-4 px-2">
-      <h2 className="text-center text-2xl font-medium">Money transfer</h2>
+      <h2 className="text-2xl font-medium">Money transfer</h2>
       <div className="mt-10 space-y-4 rounded-md border p-2">
         <PayOption
           icon={<ArrowDownCircle className="size-8 stroke-blue-500" />}
