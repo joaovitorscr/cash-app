@@ -3,8 +3,6 @@ import { LucideProps } from 'lucide-react'
 export function MoneyImage(props: LucideProps) {
   return (
     <svg
-      width="800px"
-      height="800px"
       viewBox="0 -196 1416 1416"
       className="icon"
       xmlns="http://www.w3.org/2000/svg"

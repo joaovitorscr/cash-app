@@ -34,7 +34,7 @@ export function TopMenu() {
         <button className="outline-none">
           <SideMenu />
         </button>
-        {hasPassed && (
+        {hasPassed && pathName === '/' && (
           <p className="font-medium">
             {numberToDollar(Math.floor(Math.random() * 100))}
           </p>

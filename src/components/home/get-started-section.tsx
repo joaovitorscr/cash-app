@@ -10,12 +10,12 @@ export function GetStartedSection() {
         <Card
           title="Receive Salary"
           description="Paid directely into your account"
-          icon={<WalletImage className="mr-2 h-8 w-8 p-0" />}
+          icon={<WalletImage className="size-8" />}
         />
         <Card
           title="Add money"
           description="Get more from your account"
-          icon={<MoneyImage className="ml-1 mr-2 h-8 w-8" />}
+          icon={<MoneyImage className="size-8" />}
         />
       </div>
     </SectionLayout>
