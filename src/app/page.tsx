@@ -7,8 +7,10 @@ export default function Home() {
   return (
     <main className="container mx-auto my-20 px-2">
       <AccountSummarySection />
-      <GetStartedSection />
-      <RecentlyPaidSection />
+      <div className="items-stretch justify-stretch lg:flex lg:gap-4">
+        <GetStartedSection />
+        <RecentlyPaidSection />
+      </div>
       <TransactionsSection />
     </main>
   )

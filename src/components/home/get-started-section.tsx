@@ -6,7 +6,7 @@ import { Card } from '../card'
 export function GetStartedSection() {
   return (
     <SectionLayout title="Get started">
-      <div className="space-y-4 py-2">
+      <div className="space-y-4 md:my-4 md:flex md:items-center md:space-y-0">
         <Card
           title="Receive Salary"
           description="Paid directely into your account"

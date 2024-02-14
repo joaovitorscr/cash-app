@@ -8,7 +8,7 @@ interface CardProps {
 
 export function Card({ description, icon, title }: CardProps) {
   return (
-    <button className="flex w-full items-center justify-between hover:bg-blue-100 hover:ring-1 hover:ring-blue-800 focus-visible:bg-blue-100 focus-visible:ring-2 focus-visible:ring-blue-400">
+    <button className="flex w-full items-center justify-center gap-4 rounded-md hover:bg-blue-100 hover:ring-1 hover:ring-blue-800 focus-visible:bg-blue-100 focus-visible:ring-2 focus-visible:ring-blue-400">
       {icon}
       <div className="w-56 text-left">
         <h3 className="font-medium">{title}</h3>

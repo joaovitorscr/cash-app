@@ -10,7 +10,7 @@ export function TransactionsSection() {
       rightButton={{ title: 'View all', to: '/transactions' }}
     >
       <div className="my-4 space-y-4">
-        {transactions.map((item) => (
+        {transactions.slice(0, 5).map((item) => (
           <TransactionCard
             key={item.id}
             title={item.title}
