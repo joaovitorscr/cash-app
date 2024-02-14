@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
 
-const buttonVariants = cva('mt-4 rounded-lg outline-none', {
+const buttonVariants = cva('mt-4 rounded-lg outline-none font-medium', {
   variants: {
     variant: {
       default:
@@ -12,7 +12,8 @@ const buttonVariants = cva('mt-4 rounded-lg outline-none', {
         'bg-white text-blue-500 hover:bg-zinc-200 hover:text-blue-700 focus-visible:ring-2 focus-visible:ring-zinc-400',
     },
     size: {
-      default: 'px-4 py-1 text-sm font-medium',
+      default: 'px-4 py-1 text-sm ',
+      medium: 'px-16 py-2 text-lg',
     },
   },
   defaultVariants: {
@@ -28,12 +29,12 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button'
 
     return (
       <Comp
-        className={cn(buttonVariants({ variant, className }))}
+        className={cn(buttonVariants({ variant, className, size }))}
         ref={ref}
         {...props}
       />
