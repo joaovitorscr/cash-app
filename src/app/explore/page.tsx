@@ -13,55 +13,57 @@ import { PradaLogo } from '@/assets/explore/stores/prada-logo'
 export default function Explore() {
   return (
     <main className="container mx-auto my-20 p-2">
-      <h2 className="text-2xl font-medium">Explore</h2>
+      <h2 className="text-2xl font-medium md:text-3xl">Explore</h2>
       <div className="my-8">
-        <h3 className="font-medium">Check the most bought stokes recently</h3>
-        <ul className="mt-4 flex items-center justify-center space-x-4">
+        <h3 className="font-medium md:text-lg">
+          Check the most bought stokes recently
+        </h3>
+        <ul className="mt-4 flex items-center justify-center space-x-4 md:space-x-8">
           <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
-            <NetflixLogo className="size-12" />
+            <NetflixLogo className="size-12 md:size-20" />
           </li>
           <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
-            <GoogleLogo className="size-12" />
+            <GoogleLogo className="size-12 md:size-20" />
           </li>
           <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
-            <IbmLogo className="size-12" />
+            <IbmLogo className="size-12 md:size-20" />
           </li>
           <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
-            <PaypalLogo className="size-12" />
+            <PaypalLogo className="size-12 md:size-20" />
           </li>
           <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
-            <MicrosoftLogo className="size-12" />
+            <MicrosoftLogo className="size-12 md:size-20" />
           </li>
         </ul>
       </div>
       <div>
-        <h3 className="font-medium">
+        <h3 className="font-medium md:text-lg">
           Stores with discount using you credit card
         </h3>
         <div className="mt-4 space-y-4 rounded-md border">
           <ul className="my-4  grid grid-cols-3 gap-4">
             <li className="flex cursor-pointer flex-col items-center">
-              <AdidasLogo className="size-14" />
+              <AdidasLogo className="size-12 md:size-20" />
               <p className="mt-2 font-medium text-red-600">20% Off</p>
             </li>
             <li className="flex cursor-pointer flex-col items-center">
-              <AppleLogo className="size-14" />
+              <AppleLogo className="size-12 md:size-20" />
               <p className="mt-2 font-medium text-red-600">5% Off</p>
             </li>
             <li className="flex cursor-pointer flex-col items-center">
-              <LevisLogo className="size-14" />
+              <LevisLogo className="size-12 md:size-20" />
               <p className="mt-2 font-medium text-red-600">15% Off</p>
             </li>
             <li className="flex cursor-pointer flex-col items-center">
-              <McDonaldsLogo className="size-14" />
+              <McDonaldsLogo className="size-12 md:size-20" />
               <p className="mt-2 font-medium text-red-600">30% Off</p>
             </li>
             <li className="flex cursor-pointer flex-col items-center">
-              <NikeLogo className="size-14" />
+              <NikeLogo className="size-12 md:size-20" />
               <p className="mt-2 font-medium text-red-600">80% Off</p>
             </li>
             <li className="flex cursor-pointer flex-col items-center">
-              <PradaLogo className="size-14" />
+              <PradaLogo className="size-12 md:size-20" />
               <p className="mt-2 font-medium text-red-600">20% Off</p>
             </li>
           </ul>
