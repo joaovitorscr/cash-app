@@ -31,12 +31,17 @@ export default function Referral() {
     <main className="container mx-auto my-20 px-2">
       <div className="flex flex-col items-center justify-center">
         <GiftReferee className="size-52" />
-        <h2 className="text-2xl font-medium text-blue-600">Referral Program</h2>
-        <p className="mt-2 text-sm font-medium">
-          Join our exciting referral program and start earning cash rewards
-          today! Here&apos;s how it works:
-        </p>
-        <ul className="mt-4 space-y-2 text-sm">
+        <h2 className="text-2xl font-medium text-blue-600 md:text-3xl">
+          Referral Program
+        </h2>
+        <div className="mt-2 text-sm font-medium md:mx-8 md:text-lg">
+          <p>
+            Join our exciting referral program and start earning cash rewards
+            today!
+          </p>
+          <p className="mt-4 text-center">Here&apos;s how it works:</p>
+        </div>
+        <ul className="mt-4 space-y-2 text-sm md:mt-8 md:text-lg">
           <li>
             <span className="font-semibold">👫 Refer Friends:</span> Share your
             unique referral link with friends, family, and colleagues.
