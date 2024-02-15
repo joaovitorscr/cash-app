@@ -118,121 +118,141 @@
       "id": 1,
       "title": "Grocery Shopping",
       "description": "Bought fruits, vegetables, and other groceries.",
-      "price": 50.25
+      "price": 50.25,
+      "date": "2024-02-06"
     },
     {
       "id": 2,
       "title": "Dinner at Restaurant XYZ",
       "description": "Enjoyed a meal with friends at Restaurant XYZ.",
-      "price": 75.50
+      "price": 75.50,
+      "date": "2024-02-05"
     },
     {
       "id": 3,
       "title": "Online Purchase - Clothing",
       "description": "Bought a new shirt and trousers from an online store.",
-      "price": 89.99
+      "price": 89.99,
+      "date": "2024-02-04"
     },
     {
       "id": 4,
       "title": "Utility Bill Payment",
       "description": "Paid electricity and water bills for the month.",
-      "price": 120.00
+      "price": 120.00,
+      "date": "2024-02-03"
     },
     {
       "id": 5,
       "title": "Gasoline Refill",
       "description": "Filled up the car's gas tank at the nearby gas station.",
-      "price": 40.00
+      "price": 40.00,
+      "date": "2024-02-02"
     },
     {
       "id": 6,
       "title": "Movie Tickets",
       "description": "Watched a new release at the cinema with family.",
-      "price": 40.00
+      "price": 40.00,
+      "date": "2024-02-01"
     },
     {
       "id": 7,
       "title": "Coffee Break",
       "description": "Enjoyed a latte at the local coffee shop.",
-      "price": 5.75
+      "price": 5.75,
+      "date": "2024-01-31"
     },
     {
       "id": 8,
       "title": "Lunch with Colleagues",
       "description": "Had a business lunch with colleagues at a nearby restaurant.",
-      "price": 60.00
+      "price": 60.00,
+      "date": "2024-01-30"
     },
     {
       "id": 9,
       "title": "Taxi Ride",
       "description": "Took a taxi to the airport for a business trip.",
-      "price": 25.00
+      "price": 25.00,
+      "date": "2024-01-29"
     },
     {
       "id": 10,
       "title": "Mobile Phone Bill Payment",
       "description": "Paid the monthly bill for the mobile phone service.",
-      "price": 50.00
+      "price": 50.00,
+      "date": "2024-01-28"
     },
     {
       "id": 11,
       "title": "Book Purchase",
       "description": "Bought a new novel from the bookstore.",
-      "price": 15.99
+      "price": 15.99,
+      "date": "2024-01-27"
     },
     {
       "id": 12,
       "title": "Haircut",
       "description": "Visited the salon for a haircut and styling.",
-      "price": 30.00
+      "price": 30.00,
+      "date": "2024-01-26"
     },
     {
       "id": 13,
       "title": "Gift Shopping",
       "description": "Purchased gifts for upcoming birthdays and events.",
-      "price": 100.00
+      "price": 100.00,
+      "date": "2024-01-25"
     },
     {
       "id": 14,
       "title": "Gym Membership Renewal",
       "description": "Renewed the membership at the local gym for another month.",
-      "price": 80.00
+      "price": 80.00,
+      "date": "2024-01-24"
     },
     {
       "id": 15,
       "title": "Medical Checkup",
       "description": "Visited the doctor for a routine checkup.",
-      "price": 150.00
+      "price": 150.00,
+      "date": "2024-01-23"
     },
     {
       "id": 16,
       "title": "Home Internet Bill Payment",
       "description": "Paid the monthly bill for home internet service.",
-      "price": 60.00
+      "price": 60.00,
+      "date": "2024-01-22"
     },
     {
       "id": 17,
       "title": "Online Course Enrollment",
       "description": "Enrolled in an online course to learn a new skill.",
-      "price": 120.00
+      "price": 120.00,
+      "date": "2024-01-21"
     },
     {
       "id": 18,
       "title": "Bus Fare",
       "description": "Paid the fare for a bus ride to the city center.",
-      "price": 2.50
+      "price": 2.50,
+      "date": "2024-01-20"
     },
     {
       "id": 19,
       "title": "Magazine Subscription Renewal",
       "description": "Renewed the subscription for a favorite magazine.",
-      "price": 25.00
+      "price": 25.00,
+      "date": "2024-01-19"
     },
     {
       "id": 20,
       "title": "Dental Appointment",
       "description": "Visited the dentist for a routine dental checkup.",
-      "price": 80.00
+      "price": 80.00,
+      "date": "2024-01-18"
     }
-  ]   
+  ]  
 }

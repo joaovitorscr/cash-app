@@ -16,7 +16,7 @@ export function SectionLayout({
   rightButton,
 }: SectionLayoutProps) {
   return (
-    <section className="container mx-auto my-4">
+    <section className="container mx-auto my-4 lg:col-span-1">
       <div className="flex justify-between">
         <h2 className="font-semibold">{title}</h2>
         {rightButton && (

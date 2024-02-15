@@ -1,15 +1,26 @@
-import { Button } from '../button'
-import { SectionLayout } from '../section-layout'
+import Link from 'next/link'
+import { buttonVariants } from '../button'
+import { Section, SectionHeader, SectionTitle, SectionBody } from '../section'
 
 export function RecentlyPaidSection() {
   return (
-    <SectionLayout title="Recently paid">
-      <div className="flex flex-col items-center py-4">
-        <p className="text-center text-xs text-zinc-500 md:text-base">
-          Quickly pay your most recent contacts again
-        </p>
-        <Button>Make a payment</Button>
-      </div>
-    </SectionLayout>
+    <Section>
+      <SectionHeader>
+        <SectionTitle>Recently paid</SectionTitle>
+      </SectionHeader>
+      <SectionBody className="lg:py-4">
+        <div className="flex flex-col items-center">
+          <p className="text-center text-xs text-zinc-500 md:text-base">
+            Quickly pay your most recent contacts again
+          </p>
+          <Link
+            href={'/payment'}
+            className={buttonVariants({ variant: 'default' })}
+          >
+            Make a payment
+          </Link>
+        </div>
+      </SectionBody>
+    </Section>
   )
 }

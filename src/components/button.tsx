@@ -10,6 +10,7 @@ const buttonVariants = cva('mt-4 rounded-lg outline-none font-medium', {
         'bg-blue-600 text-white hover:bg-blue-500 hover:text-zinc-100 focus-visible:bg-blue-500 focus-visible:ring-2 focus-visible:ring-blue-600',
       sideMenu:
         'bg-white text-blue-500 hover:bg-zinc-200 hover:text-blue-700 focus-visible:ring-2 focus-visible:ring-zinc-400',
+      link: 'focus-ring text-sm text-blue-600 hover:underline',
     },
     size: {
       default: 'px-4 py-1 text-sm ',

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="container mx-auto my-20 px-2">
       <AccountSummarySection />
-      <div className="items-stretch justify-stretch lg:flex lg:gap-4">
+      <div className="lg:flex lg:items-center lg:gap-4">
         <GetStartedSection />
         <RecentlyPaidSection />
       </div>

@@ -19,19 +19,19 @@ export default function Explore() {
           Check the most bought stokes recently
         </h3>
         <ul className="mt-4 flex items-center justify-center space-x-4 md:space-x-8">
-          <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400">
             <NetflixLogo className="size-12 md:size-20" />
           </li>
-          <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400">
             <GoogleLogo className="size-12 md:size-20" />
           </li>
-          <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400">
             <IbmLogo className="size-12 md:size-20" />
           </li>
-          <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400">
             <PaypalLogo className="size-12 md:size-20" />
           </li>
-          <li className="overflow-hidden rounded-full ring-2 ring-blue-400">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400">
             <MicrosoftLogo className="size-12 md:size-20" />
           </li>
         </ul>
