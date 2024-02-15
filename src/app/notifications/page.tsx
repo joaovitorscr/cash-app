@@ -17,13 +17,15 @@ export default function Notifications() {
     <main className="container mx-auto my-20 px-2">
       <div className="mx-auto flex items-center justify-between">
         <Link href={'/'} className="focus-ring">
-          <CornerUpLeft className="stroke-blue-600" />
+          <CornerUpLeft className="size-8 stroke-blue-600" />
         </Link>
-        <h2 className="mx-auto text-2xl font-medium">Notifications</h2>
+        <h2 className="mx-auto text-2xl font-medium md:text-3xl">
+          Notifications
+        </h2>
       </div>
       <div className="mt-10">
-        <h3 className="text-lg font-medium">Previously</h3>
-        <div className="mt-4 space-y-3">
+        <h3 className="text-lg font-medium md:text-2xl">Previously</h3>
+        <div className="mt-4 space-y-4">
           {notifications.map((notification: Notification) => (
             <NotificationCard
               id={notification.id}
