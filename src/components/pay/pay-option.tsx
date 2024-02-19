@@ -7,7 +7,10 @@ const PayOptionCard = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('flex items-center space-x-2', className)}
+    className={cn(
+      'focus-ring flex cursor-pointer items-center space-x-2',
+      className,
+    )}
     {...props}
   />
 ))
