@@ -9,6 +9,7 @@ import {
   ArrowUpDownIcon,
   HandHeartIcon,
   GlobeIcon,
+  HomeIcon,
 } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
@@ -50,6 +51,14 @@ export function TopMenu() {
           </p>
         )}
         <nav className="hidden w-full items-center justify-center md:flex md:space-x-4">
+          <Link
+            className={`flex items-center gap-2 ${pathName === '/' && 'text-blue-800'}`}
+            href={'/'}
+            title="Home"
+          >
+            <HomeIcon />
+            Home
+          </Link>
           <Link
             className={`flex items-center gap-2 ${pathName === '/card' && 'text-blue-800'}`}
             href={'/card'}
