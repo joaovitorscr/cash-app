@@ -254,5 +254,78 @@
       "price": 80.00,
       "date": "2024-01-18"
     }
-  ]  
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "title": "Transfer to Alice Johnson",
+      "description": "Monthly rent payment",
+      "transferValue": 1000,
+      "transferType": "withdraw"
+    },
+    {
+      "id": 2,
+      "title": "Transfer to Bob Smith",
+      "description": "Repayment of loan",
+      "transferValue": 500,
+      "transferType": "withdraw"
+    },
+    {
+      "id": 3,
+      "title": "Transfer to Savings Account",
+      "description": "Saving for vacation",
+      "transferValue": 2000,
+      "transferType": "deposit"
+    },
+    {
+      "id": 4,
+      "title": "Transfer to Emergency Fund",
+      "description": "Building emergency savings",
+      "transferValue": 1000,
+      "transferType": "deposit"
+    },
+    {
+      "id": 5,
+      "title": "Transfer to Utilities Company",
+      "description": "Monthly utility bill payment",
+      "transferValue": 150,
+      "transferType": "withdraw"
+    },
+    {
+      "id": 6,
+      "title": "Transfer to Salary Account",
+      "description": "Receiving monthly salary",
+      "transferValue": 3000,
+      "transferType": "deposit"
+    },
+    {
+      "id": 7,
+      "title": "Transfer to Grocery Store",
+      "description": "Grocery shopping",
+      "transferValue": 200,
+      "transferType": "withdraw"
+    },
+    {
+      "id": 8,
+      "title": "Transfer to Investment Account",
+      "description": "Investing for retirement",
+      "transferValue": 1000,
+      "transferType": "deposit"
+    },
+    {
+      "id": 9,
+      "title": "Transfer to Alice Johnson",
+      "description": "Reimbursement for dinner",
+      "transferValue": 50,
+      "transferType": "withdraw"
+    },
+    {
+      "id": 10,
+      "title": "Transfer to Charity Organization",
+      "description": "Donation to local charity",
+      "transferValue": 100,
+      "transferType": "withdraw"
+    }
+  ]
+  
 }

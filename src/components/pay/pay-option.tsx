@@ -1,17 +1,24 @@
-interface PayOptionProps {
-  title: string
-  description: string
-  icon: JSX.Element
-}
+import { cn } from '@/lib/utils'
+import * as React from 'react'
 
-export function PayOption({ description, icon, title }: PayOptionProps) {
-  return (
-    <div className="flex items-center space-x-2">
-      {icon}
-      <div>
-        <h3 className="font-medium text-blue-600">{title}</h3>
-        <p className="text-xs text-zinc-500">{description}</p>
-      </div>
-    </div>
-  )
-}
+const PayOptionCard = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn('flex items-center space-x-2', className)}
+    {...props}
+  />
+))
+PayOptionCard.displayName = 'PayOptionCard'
+
+const PayOptionCardContent = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div ref={ref} className={cn(className)} {...props} />
+))
+PayOptionCardContent.displayName = 'PayOptionCardContent'
+
+export { PayOptionCard, PayOptionCardContent }
