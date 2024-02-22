@@ -1,7 +1,9 @@
+'use client'
+
 import { NotificationCard } from '@/components/notifications/notification-card'
 import { CornerUpLeft } from 'lucide-react'
 import data from '../../../data.json'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 export interface Notification {
   id: number
@@ -12,13 +14,22 @@ export interface Notification {
 
 export default function Notifications() {
   const notifications = data.notifications
+  const router = useRouter()
+
+  function handleBackNavigation() {
+    router.back()
+  }
 
   return (
     <main className="container mx-auto my-20 px-2">
       <div className="mx-auto flex items-center justify-between">
-        <Link href={'/'} className="focus-ring">
+        <button
+          type="button"
+          onClick={handleBackNavigation}
+          className="focus-ring"
+        >
           <CornerUpLeft className="size-8 stroke-blue-600" />
-        </Link>
+        </button>
         <h2 className="mx-auto text-2xl font-medium md:text-3xl">
           Notifications
         </h2>

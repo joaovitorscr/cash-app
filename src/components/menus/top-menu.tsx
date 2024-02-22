@@ -1,6 +1,6 @@
 'use client'
 
-import { numberToDollar } from '@/lib/utils'
+import { cn } from '@/lib/utils'
 import { useState } from 'react'
 import { SideMenu } from './side-menu'
 import {
@@ -17,9 +17,7 @@ import { AppLogo } from '@/assets/app-logo'
 
 export function TopMenu() {
   const [hasPassed, setHasPassed] = useState<boolean>(false)
-
   const pathName = usePathname()
-
   const isNotificationsTab = pathName === '/notifications'
 
   function handleTopMenuPosition() {
@@ -34,71 +32,76 @@ export function TopMenu() {
     window.addEventListener('scroll', handleTopMenuPosition)
   }
 
+  const navItems = [
+    {
+      title: 'Home',
+      path: '/',
+      icon: <HomeIcon className="size-6" />,
+    },
+    {
+      title: 'Card',
+      path: '/card',
+      icon: <CreditCardIcon className="size-6" />,
+    },
+    {
+      title: 'Pay',
+      path: '/payment',
+      icon: <ArrowUpDownIcon className="size-6" />,
+    },
+    {
+      title: 'Invite',
+      path: '/referral',
+      icon: <HandHeartIcon className="size-6" />,
+    },
+    {
+      title: 'Explore',
+      path: '/explore',
+      icon: <GlobeIcon className="size-6" />,
+    },
+  ]
+
   return (
     <header
-      className={`fixed top-0 z-10 w-full px-2 py-4 md:border-b ${hasPassed && 'border-b backdrop-blur-sm'}`}
+      className={cn(
+        'fixed top-0 z-10 w-screen select-none py-4',
+        hasPassed && 'border-b text-white backdrop-blur-md',
+      )}
     >
-      <div className="container mx-auto flex justify-between">
-        <button className="outline-none md:hidden">
+      <div className="container mx-auto flex items-center justify-between">
+        <button type="button" className="outline-none md:hidden">
           <SideMenu />
         </button>
         <Link className="hidden md:block" href={'/'} title="Home">
-          <AppLogo className="size-8" />
+          <AppLogo className="size-10" />
         </Link>
-        {hasPassed && pathName === '/' && (
-          <p className="font-medium md:hidden">
-            {numberToDollar(Math.floor(Math.random() * 100))}
-          </p>
-        )}
-        <nav className="hidden w-full items-center justify-center md:flex md:space-x-4">
-          <Link
-            className={`flex items-center gap-2 ${pathName === '/' && 'text-blue-800'}`}
-            href={'/'}
-            title="Home"
-          >
-            <HomeIcon />
-            Home
-          </Link>
-          <Link
-            className={`flex items-center gap-2 ${pathName === '/card' && 'text-blue-800'}`}
-            href={'/card'}
-            title="Card"
-          >
-            <CreditCardIcon />
-            Card
-          </Link>
-          <Link
-            className={`flex items-center gap-2 ${pathName === '/payment' && 'text-blue-800'}`}
-            href={'/payment'}
-            title="Pay"
-          >
-            <ArrowUpDownIcon className="rotate-45" />
-            Pay
-          </Link>
-          <Link
-            className={`flex items-center gap-2 ${pathName === '/referral' && 'text-blue-800'}`}
-            href={'/referral'}
-            title="Invite"
-          >
-            <HandHeartIcon />
-            Invite
-          </Link>
-          <Link
-            className={`flex items-center gap-2 ${pathName === '/explore' && 'text-blue-800'}`}
-            href={'/explore'}
-            title="Explore"
-          >
-            <GlobeIcon />
-            Explore
-          </Link>
+        <nav className="hidden md:flex md:items-center md:space-x-4">
+          {navItems.map((item, index) => (
+            <Link
+              href={item.path}
+              key={index}
+              className={cn(
+                'flex w-auto items-center gap-2 text-lg text-zinc-600',
+                hasPassed && 'text-zinc-200',
+                pathName === item.path && 'text-blue-800',
+              )}
+            >
+              {item.icon}
+              {item.title}
+            </Link>
+          ))}
         </nav>
         <Link
           className={`focus-ring group ${isNotificationsTab ? 'pointer-events-none' : ''}`}
           aria-disabled={isNotificationsTab}
           tabIndex={isNotificationsTab ? -1 : undefined}
-          href="/notifications"
+          href={{ pathname: '/notifications', query: pathName }}
         >
-          <BellIcon className="stroke-blue-600 group-aria-disabled:stroke-zinc-500" />
+          <BellIcon
+            className={cn(
+              'stroke-zinc-600',
+              pathName === '/notifications' && 'stroke-blue-800',
+            )}
+          />
         </Link>
       </div>
     </header>
