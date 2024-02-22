@@ -1,9 +1,5 @@
 import { ContactCard } from '@/components/pay/contact-card'
 
-import {
-  PayOptionCard,
-  PayOptionCardContent,
-} from '@/components/pay/pay-option'
 import { ArrowDownCircle, ArrowUpCircle } from 'lucide-react'
 import data from '../../../data.json'
 import { Card, CardBody, CardDescription, CardTitle } from '@/components/card'
@@ -19,28 +15,28 @@ export default function Pay() {
         <div>
           <h2 className="text-2xl font-medium">Transfer options</h2>
           <div className="mt-2 space-y-4 rounded-md border p-2 lg:mx-auto lg:flex lg:w-full lg:max-w-full lg:items-center lg:justify-center lg:gap-8 lg:space-y-0">
-            <PayOptionCard className="focus-ring">
-              <ArrowDownCircle className="size-8 stroke-blue-500 stroke-1 lg:size-10" />
-              <PayOptionCardContent>
-                <h3 className="font-medium text-blue-600 lg:text-lg">
+            <Card className="group">
+              <ArrowDownCircle className="size-8 stroke-blue-500 stroke-1 transition duration-500 group-hover:scale-110 lg:size-10" />
+              <CardBody>
+                <CardTitle className="font-medium text-blue-600 lg:text-lg">
                   Deposit
-                </h3>
-                <p className="text-xs text-zinc-500 lg:text-base">
+                </CardTitle>
+                <CardDescription>
                   To your account without extra taxes.
-                </p>
-              </PayOptionCardContent>
-            </PayOptionCard>
-            <PayOptionCard className="focus-ring">
-              <ArrowUpCircle className="size-8 stroke-blue-500 stroke-1 lg:size-10" />
-              <PayOptionCardContent>
-                <h3 className="font-medium text-blue-600 lg:text-lg">
+                </CardDescription>
+              </CardBody>
+            </Card>
+            <Card className="group">
+              <ArrowUpCircle className="size-8 stroke-blue-500 stroke-1 transition duration-500 group-hover:scale-110 lg:size-10" />
+              <CardBody>
+                <CardTitle className="font-medium text-blue-600 lg:text-lg">
                   Withdraw
-                </h3>
-                <p className="text-xs text-zinc-500 lg:text-base">
+                </CardTitle>
+                <CardDescription>
                   Transfer money in just two clicks
-                </p>
-              </PayOptionCardContent>
-            </PayOptionCard>
+                </CardDescription>
+              </CardBody>
+            </Card>
           </div>
         </div>
         <div>

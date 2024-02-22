@@ -6,14 +6,16 @@ export default function CardPage() {
     <main className="container mx-auto mt-20 flex flex-col items-center justify-center px-2 md:mt-40">
       <CreditCardImage />
       <div className="flex flex-col items-center text-center">
-        <h2 className="text-xl font-medium text-blue-600 md:text-2xl">
+        <h2 className="text-xl font-medium text-blue-600 md:text-4xl">
           You have a new credit card!
         </h2>
-        <p className="mt-2 text-sm text-zinc-400 md:w-2/3 md:text-base">
+        <p className="mt-4 text-sm text-zinc-500 md:w-2/3 md:text-lg">
           Please fill your personal information so we can send you a new credit
           card with even more benefits than before.
         </p>
-        <Button size={'medium'}>Request</Button>
+        <Button className="mt-8" size={'medium'}>
+          Request
+        </Button>
       </div>
     </main>
   )

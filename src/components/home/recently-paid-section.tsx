@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { buttonVariants } from '../button'
 import { Section, SectionHeader, SectionTitle, SectionBody } from '../section'
+import { cn } from '@/lib/utils'
 
 export function RecentlyPaidSection() {
   return (
@@ -15,7 +16,10 @@ export function RecentlyPaidSection() {
           </p>
           <Link
             href={'/payment'}
-            className={buttonVariants({ variant: 'default' })}
+            className={cn(
+              'transition duration-500 hover:scale-105',
+              buttonVariants({ variant: 'default' }),
+            )}
           >
             Make a payment
           </Link>

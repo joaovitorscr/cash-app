@@ -80,7 +80,7 @@ export function TopMenu() {
               href={item.path}
               key={index}
               className={cn(
-                'flex w-auto items-center gap-2 text-lg text-zinc-600',
+                'flex w-auto items-center gap-2 text-lg text-zinc-600 transition duration-500 hover:scale-110',
                 hasPassed && 'text-zinc-200',
                 pathName === item.path && 'text-blue-800',
               )}
@@ -96,12 +96,20 @@ export function TopMenu() {
           tabIndex={isNotificationsTab ? -1 : undefined}
           href={{ pathname: '/notifications', query: pathName }}
         >
-          <BellIcon
-            className={cn(
-              'stroke-zinc-600',
-              pathName === '/notifications' && 'stroke-blue-800',
-            )}
-          />
+          <div className="relative transition duration-500 group-hover:scale-110">
+            <BellIcon
+              className={cn(
+                'stroke-zinc-600',
+                pathName === '/notifications' && 'stroke-blue-800',
+              )}
+            />
+            <div className="absolute right-0 top-0">
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                <span className="relative inline-flex h-3 w-3 rounded-full bg-sky-500"></span>
+              </span>
+            </div>
+          </div>
         </Link>
       </div>
     </header>
