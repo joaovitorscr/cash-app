@@ -326,6 +326,87 @@
       "transferValue": 100,
       "transferType": "withdraw"
     }
-  ]
-  
+  ],
+  "stores": [
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1607085941350-7d46c83aa9f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Prada",
+      "name": "Prada",
+      "discount": "30",
+      "description": "On selected items"
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1560519622-7229023b9c86?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Gucci",
+      "name": "Gucci",
+      "discount": "20",
+      "description": "Limited time offer"
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1602939971798-b0ac641fba87?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Louis Vuitton",
+      "name": "Louis Vuitton",
+      "discount": "25",
+      "description": "Exclusive online sale"
+    },
+    {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1625228339861-24040dc97591?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Chanel",
+      "name": "Chanel",
+      "discount": "15",
+      "description": "Seasonal discounts"
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1646825461394-ebd1800141d1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Dior",
+      "name": "Dior",
+      "discount": "30",
+      "description": "Limited stock"
+    },
+    {
+      "id": 6,
+      "image": "https://images.unsplash.com/photo-1624471687574-db62e60673f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Versace",
+      "name": "Versace",
+      "discount": "20",
+      "description": "Flash sale"
+    },
+    {
+      "id": 7,
+      "image": "https://images.unsplash.com/photo-1612124119733-d23933139790?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Burberry",
+      "name": "Burberry",
+      "discount": "25",
+      "description": "End of season sale"
+    },
+    {
+      "id": 8,
+      "image": "https://images.unsplash.com/photo-1526755393771-bf2e591f33a0?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Hermès",
+      "name": "Hermès",
+      "discount": "10",
+      "description": "Markdowns on select items"
+    },
+    {
+      "id": 9,
+      "image": "https://images.unsplash.com/photo-1591303927954-2b12006ca0c7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Fendi",
+      "name": "Fendi",
+      "discount": "35",
+      "description": "Clearance sale"
+    },
+    {
+      "id": 10,
+      "image": "https://images.unsplash.com/photo-1554411529-ee36dfde51b9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "Balenciaga",
+      "name": "Balenciaga",
+      "discount": "15",
+      "description": "Special online offer"
+    }
+  ]  
 }

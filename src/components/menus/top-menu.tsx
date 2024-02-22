@@ -36,7 +36,7 @@ export function TopMenu() {
 
   return (
     <header
-      className={`fixed top-0 w-full px-2 py-4 md:border-b ${hasPassed && 'border-b backdrop-blur-sm'}`}
+      className={`fixed top-0 z-10 w-full px-2 py-4 md:border-b ${hasPassed && 'border-b backdrop-blur-sm'}`}
     >
       <div className="container mx-auto flex justify-between">
         <button className="outline-none md:hidden">
