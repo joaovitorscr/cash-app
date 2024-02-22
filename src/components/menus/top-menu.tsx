@@ -7,7 +7,6 @@ import {
   BellIcon,
   CreditCardIcon,
   ArrowUpDownIcon,
-  HandHeartIcon,
   GlobeIcon,
   HomeIcon,
 } from 'lucide-react'
@@ -47,11 +46,6 @@ export function TopMenu() {
       title: 'Pay',
       path: '/payment',
       icon: <ArrowUpDownIcon className="size-6" />,
-    },
-    {
-      title: 'Invite',
-      path: '/referral',
-      icon: <HandHeartIcon className="size-6" />,
     },
     {
       title: 'Explore',

@@ -3,7 +3,6 @@ import {
   HomeIcon,
   CreditCardIcon,
   ArrowUpDownIcon,
-  HandHeartIcon,
   GlobeIcon,
 } from 'lucide-react'
 
@@ -19,7 +18,6 @@ export function BottomMenu() {
             title="Pay"
             icon={<ArrowUpDownIcon className="rotate-45" />}
           />
-          <MenuItem to="/referral" title="Invite" icon={<HandHeartIcon />} />
           <MenuItem to="/explore" title="Explore" icon={<GlobeIcon />} />
         </nav>
       </div>
