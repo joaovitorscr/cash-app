@@ -2,8 +2,8 @@ import { Notification } from '@/app/notifications/page'
 
 export function NotificationCard({ date, description, title }: Notification) {
   return (
-    <div className="flex items-center rounded-md border p-2">
-      <div className="w-full">
+    <div className="flex items-center rounded-md border p-4">
+      <div className="w-48 md:w-full">
         <div className="flex">
           <h3 className="font-medium md:text-xl">{title}</h3>
         </div>

@@ -4,7 +4,6 @@ import { cn } from '@/lib/utils'
 import { useState } from 'react'
 import { SideMenu } from './side-menu'
 import {
-  BellIcon,
   CreditCardIcon,
   ArrowUpDownIcon,
   GlobeIcon,
@@ -13,11 +12,11 @@ import {
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { AppLogo } from '@/assets/app-logo'
+import { NotificationButton } from '../notification-button'
 
 export function TopMenu() {
   const [hasPassed, setHasPassed] = useState<boolean>(false)
   const pathName = usePathname()
-  const isNotificationsTab = pathName === '/notifications'
 
   function handleTopMenuPosition() {
     if (window.scrollY >= 20) {
@@ -75,7 +74,7 @@ export function TopMenu() {
               key={index}
               className={cn(
                 'flex w-auto items-center gap-2 text-lg text-zinc-600 transition duration-500 hover:scale-110',
-                hasPassed && 'text-zinc-200',
+                hasPassed && 'text-zinc-200 hover:text-blue-400',
                 pathName === item.path && 'text-blue-800',
               )}
             >
@@ -84,27 +83,7 @@ export function TopMenu() {
             </Link>
           ))}
         </nav>
-        <Link
-          className={`focus-ring group ${isNotificationsTab ? 'pointer-events-none' : ''}`}
-          aria-disabled={isNotificationsTab}
-          tabIndex={isNotificationsTab ? -1 : undefined}
-          href={{ pathname: '/notifications', query: pathName }}
-        >
-          <div className="relative transition duration-500 group-hover:scale-110">
-            <BellIcon
-              className={cn(
-                'stroke-zinc-600',
-                pathName === '/notifications' && 'stroke-blue-800',
-              )}
-            />
-            <div className="absolute right-0 top-0">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                <span className="relative inline-flex h-3 w-3 rounded-full bg-sky-500"></span>
-              </span>
-            </div>
-          </div>
-        </Link>
+        <NotificationButton />
       </div>
     </header>
   )
