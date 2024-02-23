@@ -25,7 +25,9 @@ export function NotificationButton() {
 
       <DropdownMenu.Portal>
         <DropdownMenu.Content className="rounded-md border bg-white p-4 will-change-[opacity,transform] data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade data-[side=right]:animate-slideLeftAndFade data-[side=top]:animate-slideDownAndFade">
-          <DropdownMenu.Label>Notifications</DropdownMenu.Label>
+          <DropdownMenu.Label className="text-xl">
+            Notifications
+          </DropdownMenu.Label>
           <Separator />
           <DropdownMenu.Item className="z-10 mt-4 space-y-4 bg-white md:grid md:grid-cols-1 md:gap-4 md:space-y-0">
             {notifications.slice(0, 4).map((notification) => (

@@ -61,7 +61,7 @@ export function TopMenu() {
       )}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <button type="button" className="outline-none md:hidden">
+        <button type="button" className="outline-none md:hidden lg:hidden">
           <SideMenu />
         </button>
         <Link className="hidden md:block" href={'/'} title="Home">

@@ -12,7 +12,7 @@ export function GetStartedSection() {
       </SectionHeader>
       <SectionBody className="space-y-4 md:flex md:items-center md:justify-center md:gap-4 md:space-y-0 lg:py-8">
         <Card className="group">
-          <WalletImage className="size-8 transition duration-500 group-hover:scale-110" />
+          <WalletImage className="size-8 transition duration-500 group-hover:scale-110 lg:size-12 xl:size-8" />
           <CardBody>
             <CardTitle>Receive Salary</CardTitle>
             <CardDescription>Paid directly into your account</CardDescription>
@@ -20,7 +20,7 @@ export function GetStartedSection() {
           <ArrowRight className="text-blue-600  outline-none group-hover:text-blue-800 lg:size-8" />
         </Card>
         <Card className="group">
-          <MoneyImage className="size-8 transition duration-500 group-hover:scale-110" />
+          <MoneyImage className="size-8 transition duration-500 group-hover:scale-110 lg:size-12 xl:size-8" />
           <CardBody>
             <CardTitle>Add money</CardTitle>
             <CardDescription>Get more from your account</CardDescription>
