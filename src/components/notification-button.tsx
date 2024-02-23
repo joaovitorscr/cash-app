@@ -5,7 +5,6 @@ import { BellIcon } from 'lucide-react'
 import { Separator } from './separator'
 import data from '../../data.json'
 import { NotificationCard } from './notifications/notification-card'
-import { Notification } from '@/app/notifications/page'
 
 export function NotificationButton() {
   const notifications = data.notifications
@@ -29,9 +28,8 @@ export function NotificationButton() {
           <DropdownMenu.Label>Notifications</DropdownMenu.Label>
           <Separator />
           <DropdownMenu.Item className="z-10 mt-4 space-y-4 bg-white md:grid md:grid-cols-1 md:gap-4 md:space-y-0">
-            {notifications.slice(0, 4).map((notification: Notification) => (
+            {notifications.slice(0, 4).map((notification) => (
               <NotificationCard
-                id={notification.id}
                 key={notification.id}
                 date={notification.date}
                 title={notification.title}
