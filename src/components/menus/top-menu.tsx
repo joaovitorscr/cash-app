@@ -13,6 +13,7 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { AppLogo } from '@/assets/app-logo'
 import { NotificationButton } from '../notification-button'
+import { motion } from 'framer-motion'
 
 export function TopMenu() {
   const [hasPassed, setHasPassed] = useState<boolean>(false)
@@ -71,20 +72,31 @@ export function TopMenu() {
         >
           <AppLogo className="size-10" />
         </Link>
-        <nav className="hidden md:flex md:items-center md:space-x-4">
-          {navItems.map((item, index) => (
-            <Link
-              href={item.path}
-              key={index}
-              className={cn(
-                'flex w-auto items-center gap-2 rounded-md text-lg outline-none transition duration-500 hover:scale-110 focus-visible:ring focus-visible:ring-ring',
-                pathName === item.path && 'text-primary',
-              )}
-            >
-              {item.icon}
-              {item.title}
-            </Link>
-          ))}
+        <nav className="">
+          <ul className="hidden md:flex md:items-center md:space-x-4">
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <Link
+                  href={item.path}
+                  className={cn(
+                    'relative flex w-auto flex-col rounded-md text-lg outline-none focus-visible:ring focus-visible:ring-ring',
+                    pathName === item.path && 'text-primary',
+                  )}
+                >
+                  <div className={cn('flex items-center gap-2 pb-1')}>
+                    {item.icon}
+                    {item.title}
+                  </div>
+                  {pathName === item.path && (
+                    <motion.span
+                      layoutId="topbar-active-item"
+                      className="absolute bottom-0 h-px w-full bg-primary"
+                    />
+                  )}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </nav>
         <NotificationButton />
       </div>

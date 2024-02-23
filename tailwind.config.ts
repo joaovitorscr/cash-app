@@ -19,6 +19,8 @@ const config = {
       },
     },
     extend: {
+      minHeight: { screenHeightWithoutHeader: 'calc(100vh - 72px)' },
+      maxHeight: { screenHeightWithoutHeader: 'calc(100vh - 72px)' },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
       },
