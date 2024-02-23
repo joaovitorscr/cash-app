@@ -8,7 +8,7 @@ import {
 
 export function BottomMenu() {
   return (
-    <div className="fixed bottom-0 w-full border-t bg-white py-4 md:hidden">
+    <div className="fixed bottom-0 w-full border-t bg-background py-4 md:hidden">
       <div className="container mx-auto">
         <nav className="flex items-center justify-center gap-2">
           <MenuItem to="/" title="Home" icon={<HomeIcon />} />

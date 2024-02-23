@@ -29,7 +29,7 @@ export function StoreCard({
       <div className="absolute bottom-0 w-full select-none space-y-2 pb-4 text-center text-white">
         <h3 className="text-3xl font-semibold">{name}</h3>
         <div>
-          <span className="font-medium text-red-400 line-through">
+          <span className="font-semibold text-destructive line-through">
             {discount}% OFF
           </span>
           <p>{description}</p>

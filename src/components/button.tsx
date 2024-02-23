@@ -3,29 +3,30 @@ import * as React from 'react'
 import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
 
-const buttonVariants = cva('mt-4 rounded-lg outline-none font-medium', {
-  variants: {
-    variant: {
-      default:
-        'bg-blue-600 text-white hover:bg-blue-500 hover:text-zinc-100 focus-visible:bg-blue-500 focus-visible:ring-2 focus-visible:ring-blue-600',
-      sideMenu:
-        'bg-white text-blue-500 hover:bg-zinc-200 hover:text-blue-700 focus-visible:ring-2 focus-visible:ring-zinc-400',
-      link: 'focus-ring text-sm text-blue-600 hover:underline',
+const buttonVariants = cva(
+  'mt-4 rounded-lg outline-none text-white font-medium',
+  {
+    variants: {
+      variant: {
+        default: 'bg-primary  focus-visible:ring-2 focus-visible:ring-ring',
+        sideMenu: 'bg-primary focus-visible:ring-2 focus-visible:ring-ring',
+        link: 'focus-ring h-full mt-0 text-sm hover:text-primary hover:underline',
+      },
+      size: {
+        default: 'px-4 py-1 text-sm',
+        medium: 'px-16 py-2 text-lg',
+      },
+      animations: {
+        default: 'transition duration-300 hover:scale-105',
+      },
     },
-    size: {
-      default: 'px-4 py-1 text-sm',
-      medium: 'px-16 py-2 text-lg',
-    },
-    animations: {
-      default: 'transition duration-500 hover:scale-105',
+    defaultVariants: {
+      variant: 'default',
+      size: 'default',
+      animations: 'default',
     },
   },
-  defaultVariants: {
-    variant: 'default',
-    size: 'default',
-    animations: 'default',
-  },
-})
+)
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,

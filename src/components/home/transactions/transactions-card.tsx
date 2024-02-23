@@ -33,14 +33,16 @@ export function TransactionCard({
 
   return (
     <>
-      <div className="flex flex-col focus-visible:ring-2 focus-visible:ring-blue-400 lg:rounded-md lg:border">
-        <div className="flex h-full items-center justify-around space-x-4 md:justify-center md:gap-8">
+      <div className="flex flex-col overflow-hidden focus-visible:ring-2 focus-visible:ring-primary lg:rounded-sm lg:border">
+        <div className="flex h-full items-center justify-around space-x-4 bg-card md:justify-center md:gap-8 md:p-4">
           <ShoppingBag className="size-12 md:size-14" />
           <div className="w-56 text-left">
-            <h3 className="font-medium md:text-lg">{title}</h3>
-            <p className="text-xs md:text-sm">{description}</p>
+            <h3 className="font-medium text-primary md:text-lg">{title}</h3>
+            <p className="text-xs text-secondary-foreground md:text-sm">
+              {description}
+            </p>
           </div>
-          <p className="flex items-center text-xs font-medium text-red-600 md:text-lg">
+          <p className="flex items-center text-xs font-medium text-destructive md:text-lg">
             <span>-</span>
             {numberToDollar(price)}
           </p>

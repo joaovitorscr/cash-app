@@ -57,14 +57,18 @@ export function TopMenu() {
     <header
       className={cn(
         'fixed top-0 z-10 w-screen select-none py-4',
-        hasPassed && 'border-b text-white backdrop-blur-md',
+        hasPassed && 'border-b backdrop-blur-md',
       )}
     >
       <div className="container mx-auto flex items-center justify-between">
         <button type="button" className="outline-none md:hidden lg:hidden">
           <SideMenu />
         </button>
-        <Link className="hidden md:block" href={'/'} title="Home">
+        <Link
+          className="hidden rounded-md outline-none focus-visible:ring focus-visible:ring-ring md:block"
+          href={'/'}
+          title="Home"
+        >
           <AppLogo className="size-10" />
         </Link>
         <nav className="hidden md:flex md:items-center md:space-x-4">
@@ -73,9 +77,8 @@ export function TopMenu() {
               href={item.path}
               key={index}
               className={cn(
-                'flex w-auto items-center gap-2 text-lg text-zinc-600 transition duration-500 hover:scale-110',
-                hasPassed && 'text-zinc-200 hover:text-blue-400',
-                pathName === item.path && 'text-blue-800',
+                'flex w-auto items-center gap-2 rounded-md text-lg outline-none transition duration-500 hover:scale-110 focus-visible:ring focus-visible:ring-ring',
+                pathName === item.path && 'text-primary',
               )}
             >
               {item.icon}

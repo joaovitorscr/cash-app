@@ -10,7 +10,7 @@ export function SummaryButton({ icon, title, to }: SummaryButtonProps) {
   return (
     <Link
       href={to}
-      className="flex items-center gap-1 rounded-md bg-blue-100 p-1 text-xs font-medium text-blue-800 outline-none  transition duration-500 hover:scale-110 hover:text-blue-500 focus-visible:ring-2 focus-visible:ring-blue-800 md:text-base"
+      className="flex items-center gap-1 rounded-md bg-primary p-1 text-xs font-medium text-white outline-none transition duration-300 hover:scale-110 focus-visible:ring-2 focus-visible:ring-ring md:text-base"
     >
       {icon} <span>{title}</span>
     </Link>

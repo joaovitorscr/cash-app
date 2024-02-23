@@ -10,7 +10,7 @@ export function AccountSummarySection() {
           {numberToDollar(Math.floor(Math.random() * 100))}
         </p>
         <div>
-          <p className="font-medium text-blue-500 md:text-xl">Savings</p>
+          <p className="font-medium text-primary md:text-xl">Savings</p>
           <span className="text-lg">
             {numberToDollar(Math.floor(Math.random() * 100))}
           </span>

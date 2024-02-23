@@ -17,19 +17,19 @@ export default function Explore() {
           Check the most bought stokes recently
         </h3>
         <ul className="mt-4 flex items-center justify-center space-x-4 md:space-x-8">
-          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400 transition duration-500 hover:scale-125">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-ring transition duration-300 hover:scale-125">
             <NetflixLogo className="size-12 md:size-20" />
           </li>
-          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400 transition duration-500 hover:scale-125">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-ring transition duration-300 hover:scale-125">
             <GoogleLogo className="size-12 md:size-20" />
           </li>
-          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400 transition duration-500 hover:scale-125">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-ring transition duration-300 hover:scale-125">
             <IbmLogo className="size-12 md:size-20" />
           </li>
-          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400 transition duration-500 hover:scale-125">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-ring transition duration-300 hover:scale-125">
             <PaypalLogo className="size-12 md:size-20" />
           </li>
-          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-blue-400 transition duration-500 hover:scale-125">
+          <li className="cursor-pointer overflow-hidden rounded-full ring-2 ring-ring transition duration-300 hover:scale-125">
             <MicrosoftLogo className="size-12 md:size-20" />
           </li>
         </ul>

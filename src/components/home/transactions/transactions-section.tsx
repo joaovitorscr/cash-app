@@ -13,7 +13,7 @@ export function TransactionsSection() {
   const transactions = data.transactions
   return (
     <Section>
-      <SectionHeader>
+      <SectionHeader className="flex items-center">
         <SectionTitle>Transactions</SectionTitle>
         <Link
           className={buttonVariants({ variant: 'link' })}
@@ -24,7 +24,7 @@ export function TransactionsSection() {
         </Link>
       </SectionHeader>
       <SectionBody>
-        <div className="my-4 space-y-4 lg:grid lg:auto-rows-fr lg:grid-cols-2 lg:gap-4 lg:space-y-0 xl:grid-cols-3">
+        <div className="my-4 space-y-4 overflow-hidden lg:grid lg:auto-rows-fr lg:grid-cols-2 lg:gap-4 lg:space-y-0 xl:grid-cols-3">
           {transactions.slice(0, 5).map((item) => (
             <TransactionCard
               key={item.id}

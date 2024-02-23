@@ -9,7 +9,7 @@ export function RecentlyPaidSection() {
       <SectionHeader>
         <SectionTitle>Recently paid</SectionTitle>
       </SectionHeader>
-      <SectionBody className="lg:py-9 xl:py-6">
+      <SectionBody className="lg:py-16 xl:py-9">
         <div className="flex flex-col items-center">
           <p className="text-center text-xs text-zinc-500 md:text-base">
             Quickly pay your most recent contacts again
