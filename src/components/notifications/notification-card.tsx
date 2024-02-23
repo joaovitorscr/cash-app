@@ -1,6 +1,14 @@
-import { Notification } from '@/app/notifications/page'
+interface NotificationCardProps {
+  date: string
+  description: string
+  title: string
+}
 
-export function NotificationCard({ date, description, title }: Notification) {
+export function NotificationCard({
+  date,
+  description,
+  title,
+}: NotificationCardProps) {
   return (
     <div className="flex items-center rounded-md border p-4">
       <div className="w-48 md:w-full">
