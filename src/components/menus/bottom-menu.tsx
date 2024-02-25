@@ -9,7 +9,7 @@ import {
 export function BottomMenu() {
   return (
     <div className="fixed bottom-0 w-full border-t bg-background py-4 md:hidden">
-      <div className="container mx-auto">
+      <div>
         <nav className="flex items-center justify-center gap-2">
           <MenuItem to="/" title="Home" icon={<HomeIcon />} />
           <MenuItem to="/card" title="Card" icon={<CreditCardIcon />} />

@@ -61,7 +61,7 @@ export function TopMenu() {
         hasPassed && 'border-b backdrop-blur-md',
       )}
     >
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="mx-auto flex items-center justify-between md:container">
         <button type="button" className="outline-none md:hidden lg:hidden">
           <SideMenu />
         </button>
