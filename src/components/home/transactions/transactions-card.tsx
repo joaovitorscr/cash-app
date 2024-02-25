@@ -37,7 +37,9 @@ export function TransactionCard({
         <div className="flex h-full items-center justify-around space-x-4 bg-card md:justify-center md:gap-8 md:p-4">
           <ShoppingBag className="size-12 md:size-14" />
           <div className="w-56 text-left">
-            <h3 className="font-medium text-primary md:text-lg">{title}</h3>
+            <h3 className="text-pretty font-medium text-primary md:text-lg">
+              {title}
+            </h3>
             <p className="text-xs text-secondary-foreground md:text-sm">
               {description}
             </p>
@@ -47,7 +49,7 @@ export function TransactionCard({
             {numberToDollar(price)}
           </p>
         </div>
-        <div className="text-right text-xs font-medium lg:m-2 lg:text-sm">
+        <div className="mt-4 text-right text-xs  font-medium md:mt-0 lg:m-2 lg:text-sm">
           {formattedDate}
         </div>
       </div>

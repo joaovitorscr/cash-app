@@ -45,7 +45,7 @@ export function TopMenu() {
     {
       title: 'Pay',
       path: '/payment',
-      icon: <ArrowUpDownIcon className="size-6" />,
+      icon: <ArrowUpDownIcon className="size-6 rotate-45" />,
     },
     {
       title: 'Explore',

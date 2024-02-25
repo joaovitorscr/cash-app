@@ -10,13 +10,13 @@ export default function Pay() {
   const payments = data.payments
 
   return (
-    <main className="container mx-auto my-32 space-y-8 px-2 md:space-y-0 lg:space-y-8">
+    <main className="container mx-auto my-20 space-y-8 px-2 md:space-y-0 lg:space-y-8">
       <div className="space-y-8 md:mx-auto md:flex md:justify-center md:gap-20 md:space-y-0 lg:block lg:space-y-8">
         <div>
           <h2 className="text-2xl font-medium">Transfer options</h2>
           <div className="mt-2 space-y-4 rounded-md border p-2 lg:mx-auto lg:flex lg:w-full lg:max-w-full lg:items-center lg:justify-center lg:gap-8 lg:space-y-0">
-            <Card className="group">
-              <ArrowDownCircle className="size-8 stroke-primary stroke-1 transition duration-500 group-hover:scale-110 lg:size-10" />
+            <Card className="group justify-start">
+              <ArrowDownCircle className="size-8 stroke-primary stroke-1 transition duration-300 group-hover:scale-110 lg:size-10" />
               <CardBody>
                 <CardTitle className="font-medium text-primary lg:text-lg">
                   Deposit
@@ -26,8 +26,8 @@ export default function Pay() {
                 </CardDescription>
               </CardBody>
             </Card>
-            <Card className="group">
-              <ArrowUpCircle className="size-8 stroke-primary stroke-1 transition duration-500 group-hover:scale-110 lg:size-10" />
+            <Card className="group justify-start">
+              <ArrowUpCircle className="size-8 stroke-primary stroke-1 transition duration-300 group-hover:scale-110 lg:size-10" />
               <CardBody>
                 <CardTitle className="font-medium text-primary lg:text-lg">
                   Withdraw
@@ -54,7 +54,10 @@ export default function Pay() {
         <div className="mt-2 space-y-4 rounded-md border p-2 md:mx-auto md:max-w-xl lg:w-full lg:max-w-full">
           {payments.map(
             ({ title, transferType, description, transferValue, id }) => (
-              <Card className="rounded-none border-b py-4" key={id}>
+              <Card
+                className="rounded-none border-b py-4 last:border-0"
+                key={id}
+              >
                 {transferType === 'withdraw' ? (
                   <ArrowDownCircle className="size-8 stroke-destructive stroke-1" />
                 ) : (

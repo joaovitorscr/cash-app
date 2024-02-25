@@ -7,7 +7,7 @@ const Section = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <section
     ref={ref}
-    className={cn('container mx-auto my-4', className)}
+    className={cn('mx-auto my-4 md:container', className)}
     {...props}
   />
 ))
