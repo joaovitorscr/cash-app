@@ -1,4 +1,4 @@
-import { MenuItem } from './botton-menu-item'
+import { NavbarItem } from './navbar-item'
 import {
   HomeIcon,
   CreditCardIcon,
@@ -11,14 +11,14 @@ export function BottomMenu() {
     <div className="fixed bottom-0 w-full border-t bg-background py-4 md:hidden">
       <div>
         <nav className="flex items-center justify-center gap-2">
-          <MenuItem to="/" title="Home" icon={<HomeIcon />} />
-          <MenuItem to="/card" title="Card" icon={<CreditCardIcon />} />
-          <MenuItem
+          <NavbarItem to="/" title="Home" icon={<HomeIcon />} />
+          <NavbarItem to="/card" title="Card" icon={<CreditCardIcon />} />
+          <NavbarItem
             to="/payment"
             title="Pay"
             icon={<ArrowUpDownIcon className="rotate-45" />}
           />
-          <MenuItem to="/explore" title="Explore" icon={<GlobeIcon />} />
+          <NavbarItem to="/explore" title="Explore" icon={<GlobeIcon />} />
         </nav>
       </div>
     </div>

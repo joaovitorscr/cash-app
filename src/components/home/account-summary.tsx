@@ -1,6 +1,7 @@
 import { HandshakeIcon, ReceiptTextIcon, Wallet } from 'lucide-react'
-import { SummaryButton } from './summary-button'
 import { numberToDollar } from '@/lib/utils'
+import Link from 'next/link'
+import { buttonVariants } from '@/components/button'
 
 export function AccountSummarySection() {
   return (
@@ -17,21 +18,27 @@ export function AccountSummarySection() {
         </div>
       </div>
       <nav className="my-4 flex items-center justify-center gap-2 md:my-6 md:gap-4">
-        <SummaryButton
-          to="/payment"
-          icon={<Wallet className="h-4 w-4" />}
-          title="Add money"
-        />
-        <SummaryButton
-          to="/transactions"
-          icon={<ReceiptTextIcon className="h-4 w-4" />}
-          title="Details"
-        />
-        <SummaryButton
-          to="/payment"
-          icon={<HandshakeIcon className="h-4 w-4" />}
-          title="Make a payment"
-        />
+        <Link
+          href={'/payment'}
+          className={buttonVariants({ size: 'small', variant: 'summary' })}
+        >
+          <Wallet className="h-4 w-4" />
+          Add money
+        </Link>
+        <Link
+          href={'/transactions'}
+          className={buttonVariants({ size: 'small', variant: 'summary' })}
+        >
+          <ReceiptTextIcon className="h-4 w-4" />
+          Details
+        </Link>
+        <Link
+          href={'/payment'}
+          className={buttonVariants({ size: 'small', variant: 'summary' })}
+        >
+          <HandshakeIcon className="h-4 w-4" />
+          Make a payment
+        </Link>
       </nav>
     </div>
   )

@@ -9,15 +9,17 @@ import {
   GlobeIcon,
   HomeIcon,
 } from 'lucide-react'
-import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { AppLogo } from '@/assets/app-logo'
 import { NotificationButton } from '../notification-button'
+import { NavbarItem } from './navbar-item'
 import { motion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 
 export function TopMenu() {
   const [hasPassed, setHasPassed] = useState<boolean>(false)
-  const pathName = usePathname()
+
+  const pathname = usePathname()
 
   function handleTopMenuPosition() {
     if (window.scrollY >= 20) {
@@ -57,7 +59,7 @@ export function TopMenu() {
   return (
     <header
       className={cn(
-        'fixed top-0 z-10 w-screen select-none py-4',
+        'fixed top-0 z-10 w-screen select-none overflow-hidden py-4 md:relative',
         hasPassed && 'border-b backdrop-blur-md',
       )}
     >
@@ -72,28 +74,18 @@ export function TopMenu() {
         >
           <AppLogo className="size-10" />
         </Link>
-        <nav className="">
+        <nav>
           <ul className="hidden md:flex md:items-center md:space-x-4">
-            {navItems.map((item, index) => (
+            {navItems.map(({ title, icon, path }, index) => (
               <li key={index}>
-                <Link
-                  href={item.path}
-                  className={cn(
-                    'relative flex w-auto flex-col rounded-md text-lg outline-none focus-visible:ring focus-visible:ring-ring',
-                    pathName === item.path && 'text-primary',
-                  )}
-                >
-                  <div className={cn('flex items-center gap-2 pb-1')}>
-                    {item.icon}
-                    {item.title}
-                  </div>
-                  {pathName === item.path && (
+                <NavbarItem title={title} icon={icon} to={path}>
+                  {pathname === path && (
                     <motion.span
                       layoutId="topbar-active-item"
                       className="absolute bottom-0 h-px w-full bg-primary"
                     />
                   )}
-                </Link>
+                </NavbarItem>
               </li>
             ))}
           </ul>

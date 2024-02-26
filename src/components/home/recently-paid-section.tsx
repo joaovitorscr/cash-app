@@ -16,10 +16,7 @@ export function RecentlyPaidSection() {
           </p>
           <Link
             href={'/payment'}
-            className={cn(
-              'transition duration-500 hover:scale-105',
-              buttonVariants({ variant: 'default' }),
-            )}
+            className={cn('mt-4', buttonVariants({ variant: 'default' }))}
           >
             Make a payment
           </Link>

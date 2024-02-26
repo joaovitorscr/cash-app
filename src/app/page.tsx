@@ -1,4 +1,4 @@
-import { AccountSummarySection } from '@/components/home/summary/account-summary'
+import { AccountSummarySection } from '@/components/home/account-summary'
 import { GetStartedSection } from '@/components/home/get-started-section'
 import { RecentlyPaidSection } from '@/components/home/recently-paid-section'
 import { TransactionsSection } from '@/components/home/transactions/transactions-section'
