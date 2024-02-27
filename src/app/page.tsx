@@ -5,7 +5,7 @@ import { TransactionsSection } from '@/components/home/transactions/transactions
 
 export default function Home() {
   return (
-    <main className="container mx-auto my-20 px-2">
+    <main className="container mx-auto px-2">
       <AccountSummarySection />
       <div className="lg:flex lg:items-center lg:gap-4">
         <GetStartedSection />

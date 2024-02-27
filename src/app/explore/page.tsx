@@ -10,7 +10,7 @@ export default function Explore() {
   const stores = data.stores
 
   return (
-    <main className="container mx-auto my-20 p-2">
+    <main className="container mx-auto p-2">
       <h2 className="text-2xl font-medium md:text-3xl">Explore</h2>
       <div className="my-8">
         <h3 className="font-medium md:text-lg">
@@ -38,7 +38,7 @@ export default function Explore() {
         <h3 className="font-medium md:text-lg">
           Stores with discount using you credit card
         </h3>
-        <div className="flex justify-center rounded-md border">
+        <div className="mt-4 flex justify-center rounded-md border">
           <div className="mt-4 grid grid-cols-1 gap-8 py-8 md:grid-cols-3 lg:grid-cols-4">
             {stores.map(({ alt, description, discount, id, image, name }) => (
               <StoreCard

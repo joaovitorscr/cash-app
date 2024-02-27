@@ -3,7 +3,7 @@ import { Button } from '@/components/button'
 
 export default function CardPage() {
   return (
-    <main className="container mx-auto mt-20 flex flex-col items-center justify-center md:mt-40">
+    <main className="container mx-auto flex flex-col items-center justify-center">
       <CreditCardImage />
       <div className="flex flex-col items-center text-center">
         <h2 className="text-xl font-medium text-primary md:text-4xl">

@@ -10,7 +10,7 @@ export default function Pay() {
   const payments = data.payments
 
   return (
-    <main className="container mx-auto my-20 space-y-8 px-2 md:space-y-0 lg:space-y-8">
+    <main className="container mx-auto space-y-8 px-2 md:space-y-0 lg:space-y-8">
       <div className="space-y-8 md:mx-auto md:flex md:justify-center md:gap-20 md:space-y-0 lg:block lg:space-y-8">
         <div>
           <h2 className="text-2xl font-medium">Transfer options</h2>

@@ -5,7 +5,7 @@ import { buttonVariants } from '@/components/button'
 
 export function AccountSummarySection() {
   return (
-    <div className="md:py-10">
+    <div>
       <div className="flex items-center justify-center gap-6">
         <p className="text-4xl md:text-6xl">
           {numberToDollar(Math.floor(Math.random() * 100))}

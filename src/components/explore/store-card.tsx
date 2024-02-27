@@ -19,7 +19,7 @@ export function StoreCard({
     <div className="group relative w-fit cursor-pointer">
       <div className="overflow-hidden rounded-md">
         <Image
-          className="size-64 object-cover blur-[2px] transition duration-500 group-hover:scale-125"
+          className="size-64 object-cover blur-[3px] transition duration-500 group-hover:scale-125"
           width={1920}
           height={1080}
           src={image}
