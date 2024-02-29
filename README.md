@@ -8,7 +8,7 @@ This website was created to simulate a banking app interface.
 * TailwindCSS
 
 ## ⚠️ Prerequesites
-npm >=10.1.0
+npm >=10.1.0   
 node >=18.171
 
 ## 🔌 Getting Started
