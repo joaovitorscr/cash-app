@@ -1,7 +1,5 @@
+import LandingPage from '@/screens/landing-page/landing-page'
+
 export default function Home() {
-  return (
-    <main>
-      <h2>Init</h2>
-    </main>
-  )
+  return <LandingPage />
 }
