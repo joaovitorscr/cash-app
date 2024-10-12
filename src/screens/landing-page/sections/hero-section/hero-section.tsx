@@ -2,7 +2,7 @@ import { Button } from '@/shared/components/button'
 import Image from 'next/image'
 import TransactionCard from './components/transaction-card'
 
-export default function HeroSection() {
+export function HeroSection() {
   return (
     <section className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[37rem_1fr] lg:gap-40">
       <div className="space-y-4 text-center leading-6 md:text-left">

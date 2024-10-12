@@ -5,12 +5,12 @@ import {
 } from 'lucide-react'
 import * as ProductCard from './components/product-card'
 
-export default function ProjectsSection() {
+export function ProductsSection() {
   return (
     <section>
       <div className="space-y-4">
         <h2 className="text-center text-4xl md:text-left">
-          Our <span className="text-primary">Projects</span>
+          Our <span className="text-primary">Products</span>
         </h2>
         <p className="text-center text-lg font-light md:text-left">
           Discover a range of comprehensive and customizable banking products at

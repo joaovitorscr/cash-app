@@ -2,7 +2,7 @@ import { Button } from '@/shared/components/button'
 import Image from 'next/image'
 import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 
-export default function Navbar() {
+export function Navbar() {
   return (
     <header className="container fixed left-1/2 top-4 flex -translate-x-1/2 items-center justify-between rounded-full border bg-card px-5 py-4">
       <h1 className="flex items-center gap-2">
