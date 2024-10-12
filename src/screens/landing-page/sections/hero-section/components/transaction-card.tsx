@@ -2,7 +2,7 @@ export default function TransactionCard() {
   return (
     <div className="flex items-center justify-between rounded-md border bg-card px-4 py-2">
       <div className="flex items-center gap-2">
-        <div className="flex size-10 flex-col items-center justify-center rounded-full bg-primary p-2">
+        <div className="flex size-7 flex-col items-center justify-center rounded-full bg-primary p-2 md:size-10">
           <svg
             className="stroke-background"
             xmlns="http://www.w3.org/2000/svg"
@@ -23,10 +23,10 @@ export default function TransactionCard() {
         </div>
         <div>
           <p className="text-sm font-light">Transaction</p>
-          <h3>Joel Kenley</h3>
+          <h3 className="text-sm md:text-base">Joel Kenley</h3>
         </div>
       </div>
-      <p className="text-xl">-$68.00</p>
+      <p className="text-sm md:text-xl">-$68.00</p>
     </div>
   )
 }

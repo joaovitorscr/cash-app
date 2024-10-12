@@ -4,7 +4,7 @@ import TransactionCard from './components/transaction-card'
 
 export default function HeroSection() {
   return (
-    <section className="grid grid-cols-1 gap-40 md:grid-cols-[37rem_1fr]">
+    <section className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[37rem_1fr] lg:gap-40">
       <div className="space-y-4 text-center leading-6 md:text-left">
         <h2 className="text-4xl leading-10">
           Welcome to Cash App Empowering Your{' '}
@@ -16,7 +16,7 @@ export default function HeroSection() {
           goals. We are committed to delivering personalized and innovative
           services that prioritize our customers&apos; needs.
         </p>
-        <Button>Open Account</Button>
+        <Button className="w-full">Open Account</Button>
       </div>
       <div className="space-y-8 rounded-lg border bg-card p-8">
         <div className="space-y-4">
