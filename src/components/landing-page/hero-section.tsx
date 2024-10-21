@@ -1,6 +1,6 @@
-import { Button } from '@/shared/components/button'
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import TransactionCard from './components/transaction-card'
+import TransactionCard from './transaction-card'
 
 export function HeroSection() {
   return (

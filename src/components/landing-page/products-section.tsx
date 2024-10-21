@@ -3,7 +3,7 @@ import {
   BanknoteIcon,
   BriefcaseBusinessIcon,
 } from 'lucide-react'
-import * as ProductCard from './components/product-card'
+import * as ProductCard from './product-card'
 
 export function ProductsSection() {
   return (

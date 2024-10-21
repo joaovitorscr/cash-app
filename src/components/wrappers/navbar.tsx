@@ -1,4 +1,4 @@
-import { Button } from '@/shared/components/button'
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 
