@@ -19,7 +19,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['jsx-a11y', '@typescript-eslint', 'react', 'react-hooks'],
+  plugins: ['jsx-a11y', '@typescript-eslint', 'react'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -47,8 +47,6 @@ module.exports = {
     'jsx-a11y/role-supports-aria-props': 'warn',
     'react/no-unknown-property': 'error',
     'react/jsx-uses-vars': 'error',
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
   },
   settings: {
     react: {

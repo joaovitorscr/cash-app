@@ -7,7 +7,7 @@ import ProductCard from '../components/product-card'
 
 export function ProductsSection() {
   return (
-    <section>
+    <section id="#products">
       <div className="space-y-4">
         <h2 className="text-center text-4xl md:text-left">
           Our <span className="text-primary">Products</span>

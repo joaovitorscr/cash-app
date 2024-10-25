@@ -4,7 +4,7 @@ import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 border bg-card px-5 py-4 shadow-2xl">
+    <header className="sticky top-0 h-16 border bg-card py-4 shadow-xl">
       <div className="container flex items-center justify-between">
         <h1 className="flex items-center gap-2">
           <Image
@@ -19,7 +19,7 @@ export function Navbar() {
         <nav className="hidden md:block">
           <ul className="flex items-center gap-4 text-lg font-light">
             <li>
-              <a href="#welcome">Welcome</a>
+              <a href="#hero">Welcome</a>
             </li>
             <li>
               <a href="#products">Products</a>

@@ -4,7 +4,10 @@ import TransactionCard from '../components/transaction-card'
 
 export function HeroSection() {
   return (
-    <section className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[37rem_1fr] lg:gap-40">
+    <section
+      id="hero"
+      className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[37rem_1fr] lg:gap-40"
+    >
       <div className="space-y-4 text-center leading-6 md:text-left">
         <h2 className="text-4xl leading-10">
           Welcome to Cash App Empowering Your{' '}
