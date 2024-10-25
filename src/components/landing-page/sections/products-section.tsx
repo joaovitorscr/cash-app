@@ -3,7 +3,7 @@ import {
   BanknoteIcon,
   BriefcaseBusinessIcon,
 } from 'lucide-react'
-import * as ProductCard from './product-card'
+import ProductCard from '../components/product-card'
 
 export function ProductsSection() {
   return (
@@ -17,7 +17,7 @@ export function ProductsSection() {
           YourBank, designed to suit your unique financial needs and aspirations
         </p>
       </div>
-      <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-16 md:grid-cols-3">
         <ProductCard.Root>
           <div className="w-min rounded-full bg-[radial-gradient(circle,rgba(34,197,94,1)_57%,rgba(34,197,71,1)_78%)] p-2">
             <BriefcaseBusinessIcon />

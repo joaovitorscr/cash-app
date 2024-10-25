@@ -11,7 +11,7 @@ const Root = React.forwardRef<
     ref={ref}
   />
 ))
-Root.displayName = 'Root'
+Root.displayName = 'ProductCard.Root'
 
 const Title = React.forwardRef<
   HTMLHeadingElement,
@@ -19,7 +19,7 @@ const Title = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <h3 className={cn('text-xl font-medium', className)} {...props} ref={ref} />
 ))
-Title.displayName = 'Title'
+Title.displayName = 'ProductCard.Title'
 
 const Description = React.forwardRef<
   HTMLParagraphElement,
@@ -27,6 +27,8 @@ const Description = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p className={cn('text-md', className)} {...props} ref={ref} />
 ))
-Description.displayName = 'Description'
+Description.displayName = 'ProductCard.Description'
 
-export { Root, Title, Description }
+const ProductCard = { Root, Title, Description }
+
+export default ProductCard

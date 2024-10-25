@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import TransactionCard from './transaction-card'
+import TransactionCard from '../components/transaction-card'
 
 export function HeroSection() {
   return (
