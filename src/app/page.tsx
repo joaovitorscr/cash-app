@@ -1,5 +1,5 @@
 import { HeroSection } from '@/components/landing-page/sections/hero-section'
-import { PricingSection } from '@/components/landing-page/sections/pricing-section'
+import { PlansSection } from '@/components/landing-page/sections/plans-section'
 import { ProductsSection } from '@/components/landing-page/sections/products-section'
 import { Footer } from '@/components/wrappers/footer'
 import { Navbar } from '@/components/wrappers/navbar'
@@ -11,7 +11,7 @@ export default function Home() {
       <main className="container my-8 space-y-32">
         <HeroSection />
         <ProductsSection />
-        <PricingSection />
+        <PlansSection />
       </main>
       <Footer />
     </>

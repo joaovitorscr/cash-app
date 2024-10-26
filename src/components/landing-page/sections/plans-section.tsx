@@ -1,6 +1,6 @@
 import { IPlanCard, PlanCard } from '../components/plan-card'
 
-export function PricingSection() {
+export function PlansSection() {
   const plans: IPlanCard[] = [
     {
       title: 'Starter',
@@ -50,7 +50,7 @@ export function PricingSection() {
   ]
 
   return (
-    <section id="#pricing">
+    <section id="plans">
       <div className="space-y-4">
         <h2 className="text-center text-4xl md:text-right">
           Our <span className="text-primary">Plans</span>

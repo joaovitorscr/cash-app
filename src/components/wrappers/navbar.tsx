@@ -1,10 +1,35 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { HamburgerMenuIcon } from '@radix-ui/react-icons'
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
+import { useState } from 'react'
 
 export function Navbar() {
+  const { scrollY } = useScroll()
+  const [hidden, setHidden] = useState<boolean>(false)
+
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    const previous = scrollY.getPrevious()
+
+    if (latest > previous! && latest > 160) {
+      setHidden(true)
+    } else {
+      setHidden(false)
+    }
+  })
+
   return (
-    <header className="sticky top-0 h-16 border bg-card py-4 shadow-xl">
+    <motion.header
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: '-100%' },
+      }}
+      animate={hidden ? 'hidden' : 'visible'}
+      transition={{ duration: 0.35, ease: 'easeInOut' }}
+      className="sticky top-0 h-20 border bg-card py-4 shadow-xl"
+    >
       <div className="container flex items-center justify-between">
         <h1 className="flex items-center gap-2">
           <Image
@@ -37,6 +62,6 @@ export function Navbar() {
           <HamburgerMenuIcon />
         </Button>
       </div>
-    </header>
+    </motion.header>
   )
 }

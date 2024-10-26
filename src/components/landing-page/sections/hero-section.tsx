@@ -1,12 +1,19 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import TransactionCard from '../components/transaction-card'
+import { motion } from 'framer-motion'
 
 export function HeroSection() {
   return (
-    <section
+    <motion.section
       id="hero"
-      className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[37rem_1fr] lg:gap-40"
+      className="grid grid-cols-1 gap-10 pt-32 md:grid-cols-2 lg:grid-cols-[37rem_1fr] lg:gap-40"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4, ease: 'easeIn' }}
     >
       <div className="space-y-4 text-center leading-6 md:text-left">
         <h2 className="text-4xl leading-10">
@@ -65,6 +72,6 @@ export function HeroSection() {
           <Button className="w-full">Exchange</Button>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

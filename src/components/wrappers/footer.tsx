@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export function Footer() {
   return (
-    <footer className="h-16 border bg-card py-4 shadow-t-xl">
+    <footer className="h-20 border bg-card py-4 shadow-t-xl">
       <div className="container flex items-center">
         <div className="mx-auto">
           <p>&copy; {new Date().getFullYear()} Cash App </p>
