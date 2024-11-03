@@ -17,7 +17,7 @@ export function PlanCard({
   perks,
 }: IPlanCard) {
   return (
-    <div className="flex flex-col gap-8 rounded-lg border p-8">
+    <div className="flex flex-col gap-8 rounded-lg border bg-card p-8">
       <h3 className="text-3xl font-semibold">{title}</h3>
       <p>{description}</p>
       {price && (

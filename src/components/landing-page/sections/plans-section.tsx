@@ -1,3 +1,4 @@
+import { OnScrollReveal } from '@/components/wrappers/on-scroll-reveal'
 import { IPlanCard, PlanCard } from '../components/plan-card'
 
 export function PlansSection() {
@@ -50,32 +51,40 @@ export function PlansSection() {
   ]
 
   return (
-    <section id="plans">
-      <div className="space-y-4">
-        <h2 className="text-center text-4xl md:text-right">
-          Our <span className="text-primary">Plans</span>
-        </h2>
-        <p className="text-center text-lg font-light md:text-right">
-          Find the right plan for you, doesn&apos;t matter if you just wanna try
-          it out or want to migrate your whole corporative financial structure.
-        </p>
+    <section id="plans" className="relative h-dvh">
+      <div className="container space-y-4 pt-16 text-center md:text-left">
+        <OnScrollReveal>
+          <h2 className="text-4xl">
+            Our <span className="text-primary">Plans</span>
+          </h2>
+        </OnScrollReveal>
+        <OnScrollReveal>
+          <p className="text-lg font-light">
+            Find the right plan for you, doesn&apos;t matter if you just wanna
+            try it out or want to migrate your whole corporative financial
+            structure.
+          </p>
+        </OnScrollReveal>
       </div>
-      <div className="mt-10 grid grid-cols-4 gap-16">
-        {plans.map(
-          (
-            { title, description, price, actionText = 'Sign Up', perks },
-            index,
-          ) => (
-            <PlanCard
-              key={index}
-              title={title}
-              description={description}
-              price={price}
-              actionText={actionText}
-              perks={perks}
-            />
-          ),
-        )}
+      <div className="container absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="mt-10 grid grid-cols-4 gap-16">
+          {plans.map(
+            (
+              { title, description, price, actionText = 'Sign Up', perks },
+              index,
+            ) => (
+              <OnScrollReveal key={index}>
+                <PlanCard
+                  title={title}
+                  description={description}
+                  price={price}
+                  actionText={actionText}
+                  perks={perks}
+                />
+              </OnScrollReveal>
+            ),
+          )}
+        </div>
       </div>
     </section>
   )
