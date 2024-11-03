@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import { useState } from 'react'
+import Link from 'next/link'
 
 export function Navbar() {
   const { scrollY } = useScroll()
@@ -40,12 +41,9 @@ export function Navbar() {
           <span className="text-xl font-medium">Cash App</span>
         </h1>
         <div className="hidden items-center gap-4 font-light md:flex">
-          <a href="/sign-up" type="button">
-            Sign up
-          </a>
-          <a href="/sign-in" className={buttonVariants()} type="button">
-            Login
-          </a>
+          <Link href="/sign-up" className={buttonVariants()} type="button">
+            Sign Up
+          </Link>
         </div>
         <Button className="block md:hidden">
           <HamburgerMenuIcon />
