@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import Image from 'next/image'
 import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
@@ -40,8 +40,12 @@ export function Navbar() {
           <span className="text-xl font-medium">Cash App</span>
         </h1>
         <div className="hidden items-center gap-4 font-light md:flex">
-          <button type="button">Sign up</button>
-          <Button type="button">Login</Button>
+          <a href="/sign-up" type="button">
+            Sign up
+          </a>
+          <a href="/sign-in" className={buttonVariants()} type="button">
+            Login
+          </a>
         </div>
         <Button className="block md:hidden">
           <HamburgerMenuIcon />

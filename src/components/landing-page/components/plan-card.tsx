@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import { CheckIcon } from 'lucide-react'
 
 export interface IPlanCard {
@@ -26,7 +26,9 @@ export function PlanCard({
           <span className="ms-4 text-6xl">{price}</span>
         </p>
       )}
-      <Button>{actionText ?? 'Sign Up'} </Button>
+      <a href="/sign-up" className={buttonVariants()}>
+        {actionText ?? 'Sign Up'}{' '}
+      </a>
       <div>
         <h4>Key Features:</h4>
         <div className="ms-4 mt-5 flex flex-col gap-4">
