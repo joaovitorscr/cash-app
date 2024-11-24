@@ -1,9 +1,8 @@
+![Cash App](https://github.com/joaovitorscr/cash-app/blob/main/public/assets/cash-app-store.png)
 
 # Cash App
 
 Project developed as a way to practive my habilities creating a landing page from a fictional bank  called Cash App.
-
-
 
 ## Tech Stack
 
