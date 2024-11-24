@@ -12,7 +12,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: 'Cash App',
-  description: 'You Definitive Banking App',
+  description: 'Your Definitive Banking App',
 }
 
 export default function RootLayout({
